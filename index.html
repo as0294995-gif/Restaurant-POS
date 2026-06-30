@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurant POS</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="header">
+
+<div class="logo">
+
+<h1>Restaurant POS</h1>
+
+<p>برنامج كاشير مطعم فول وطعمية</p>
+
+</div>
+
+<div class="header-info">
+
+<div class="date" id="currentDate">
+00 / 00 / 0000
+</div>
+
+<div class="time" id="currentTime">
+00:00:00
+</div>
+
+</div>
+
+</header>
+
+<div class="content">
+
+<aside class="invoice">
+
+<div class="invoice-header">
+
+<h2>الفاتورة</h2>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>الصنف</th>
+
+<th>الكمية</th>
+
+<th>السعر</th>
+
+<th>الإجمالي</th>
+
+</tr>
+
+</thead>
+
+<tbody id="invoiceBody">
+
+</tbody>
+
+</table>
+
+<div class="invoice-total">
+
+<h3>
+
+الإجمالي :
+
+<span id="totalPrice">
+
+0.00
+
+</span>
+
+جنيه
+
+</h3>
+
+</div>
+
+</aside>
+
+<section class="menu">
+
+<div class="categories">
+
+<button class="category active">الكل</button>
+
+<button class="category">فول</button>
+
+<button class="category">طعمية</button>
+
+<button class="category">ساندويتشات</button>
+
+<button class="category">مشروبات</button>
+
+<button class="category">إضافات</button>
+
+</div>
+
+<div class="products" id="products">
+
+<button class="product">فول سادة</button>
+
+<button class="product">فول زيت</button>
+
+<button class="product">فول
+
+<footer class="footer">
+
+<div class="payment">
+
+<h3>الدفع</h3>
+
+<input type="number" id="paidAmount" placeholder="المبلغ المدفوع">
+
+<div class="change">
+
+الباقي :
+<span id="changeAmount">0.00</span>
+جنيه
+
+</div>
+
+</div>
+
+<div class="actions">
+
+<button id="newOrder">طلب جديد</button>
+
+<button id="printBill">طباعة الفاتورة</button>
+
+<button id="deleteItem">حذف الصنف</button>
+
+<button id="clearBill">مسح الفاتورة</button>
+
+</div>
+
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
