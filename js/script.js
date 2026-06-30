@@ -62,3 +62,17 @@ totalPrice.textContent=total.toFixed(2);
 }
 
 });
+
+const clearBill=document.getElementById("clearBill");
+
+clearBill.addEventListener("click",function(){
+
+cart={};
+
+invoiceBody.innerHTML="";
+
+total=0;
+
+totalPrice.textContent="0.00";
+
+});
